@@ -1,5 +1,5 @@
 /**
- * Gruntfile for Checkin
+ * Gruntfile for Comic
  */
 
 module.exports = function (grunt) {
