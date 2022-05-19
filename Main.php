@@ -8,9 +8,9 @@ namespace IdnoPlugins\Comic {
         function registerPages()
         {
             \Idno\Core\Idno::site()->routes()->addRoute('/comic/edit/?', '\IdnoPlugins\Comic\Pages\Edit');
-            \Idno\Core\Idno::site()->routes()->addRoute('/comic/edit/([A-Za-z0-9]+)/?', '\IdnoPlugins\Comic\Pages\Edit');
-            \Idno\Core\Idno::site()->routes()->addRoute('/comic/delete/([A-Za-z0-9]+)/?', '\IdnoPlugins\Comic\Pages\Delete');
-            \Idno\Core\Idno::site()->routes()->addRoute('/comic/([A-Za-z0-9]+)/.*', '\Idno\Pages\Entity\View');
+            \Idno\Core\Idno::site()->routes()->addRoute('/comic/edit/:id/?', '\IdnoPlugins\Comic\Pages\Edit');
+            \Idno\Core\Idno::site()->routes()->addRoute('/comic/delete/:id/?', '\IdnoPlugins\Comic\Pages\Delete');
+            \Idno\Core\Idno::site()->routes()->addRoute('/comic/:id/.*', '\Idno\Pages\Entity\View');
         }
 
         function registerTranslations()
