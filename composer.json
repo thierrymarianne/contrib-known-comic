@@ -1,0 +1,12 @@
+{
+    "name": "thierrymarianne/contrib-known-comic",
+    "description": "Sharing comics with known.",
+    "type": "known-plugin",
+    "version": "1.0.0",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "Comic"
+    }
+}
